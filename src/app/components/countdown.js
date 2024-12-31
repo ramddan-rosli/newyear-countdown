@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, Stars, } from 'lucide-react';
 
 // Get timezone configuration from environment variables
-const TIMEZONE_OFFSET = Number(process.env.NEXT_PUBLIC_TIMEZONE_OFFSET) || 8; // Default to Malaysia time if not set
-const TIMEZONE_NAME = process.env.NEXT_PUBLIC_TIMEZONE_NAME || "Malaysia";
+const TIMEZONE_OFFSET = Number(process.env.PUBLIC_TIMEZONE_OFFSET) || 8; // Default to Malaysia time if not set
+const TIMEZONE_NAME = process.env.PUBLIC_TIMEZONE_NAME || "Malaysia";
 
 const Firework = ({ delay }) => {
     const [position] = useState({
